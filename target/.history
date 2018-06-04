@@ -1,0 +1,4 @@
+val func1 = (a:Int,b:Double) => (b,a)
+scala
+clean
+console
