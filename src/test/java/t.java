@@ -17,6 +17,17 @@ public class t {
         System.out.println("cacheArray="+cacheArray.length);
         System.out.println("cacheArray1="+cacheArray1.length);
 
+        //没有break,就会执行所有的case
+        int switch_type = 0;
 
+        switch (switch_type){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+                System.out.println(switch_type);
+            default:
+                System.out.println("default");
+        }
     }
 }

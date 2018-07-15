@@ -17,6 +17,8 @@ object testList {
     println(list2)
 
     val list3 = Nil
+    if(list3.isEmpty)
+      println("list3 is Nil is empty")
     val list4 = list3 :+ 1
     println(list4)
 
@@ -78,5 +80,8 @@ object testList {
     val listT = ListBuffer(("aa",3),("aa",1),("aa",4))
     println(listT.foldLeft(0)(_+_._2))
 
+    //contain
+    if(listT.contains(("aa",3))  )
+      println("true")
   }
 }

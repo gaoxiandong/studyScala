@@ -20,13 +20,13 @@ object testObject{
   }
   def main(args: Array[String]) {
     val testO = testObject  //单例对象
-    println(testO)
+    println(s"test0=$testO")
 
     val testOO = testObject() //调用了apply
-    println(testOO)
+    println(s"test00=$testOO")
 
     val testOO1 = testObject("123") //调用了apply
-    println(testOO1)  //()就是Unit
+    println(s"test001=$testOO1")  //()就是Unit
   }
 }
 

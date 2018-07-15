@@ -6,8 +6,8 @@
 		module="scalastudy_2.12"
 		revision="1.0"
 		conf="sources"
-		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20180526121255"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20180710172359"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

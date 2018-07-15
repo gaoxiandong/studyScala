@@ -15,8 +15,8 @@ class Person {
   //private[this],伴生对象里面也不能访问,只能在class里面访问或者class里面的方法访问
   private[this] var pop:String = _
 
-  //private[testClass],pacage里面都可以访问
-  private[testClass] var pacage1:String = _
+  //private[testClass],package里面都可以访问
+  private[testClass] var package1:String = _
 
   def testPop: Unit ={
     println("pop="+pop)
@@ -28,6 +28,7 @@ class Person {
 object Person {
   val ddd = "ddd"   //常量
   var eee:Int = _
+  var str:String = ""
 
   def main(args: Array[String]) {
 //    var ddd1:Int = _    //方法里面不行
@@ -37,9 +38,11 @@ object Person {
     person.name = "gxd1"
     println(person.id + " "+person.name)
     println("gender="+person.gender)
-    println("pacage1="+person.pacage1)
+    println("package1="+person.package1)
 //    println("pop="+person.pop ) //不能访问pop变量
     person.testPop
+    if(str.isEmpty)
+      println("str is null")
   }
 }
 

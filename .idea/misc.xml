@@ -3,10 +3,6 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="JUnitGeneratorProjectSettings">
-    <option name="outputFilePattern" value="${SOURCEPATH}/../../test/${PACKAGE}/${FILENAME}" />
-    <option name="selectedTemplateKey" value="JUnit 4" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>

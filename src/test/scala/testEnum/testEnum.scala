@@ -19,5 +19,6 @@ object testEnum extends Enumeration{
   def main(args: Array[String]) {
     println(testEnum.user.id)
     println(testEnum.user.toString)
+    println(testEnum.user)
   }
 }

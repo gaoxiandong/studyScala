@@ -6,7 +6,7 @@ import scala.util.{Failure, Success}
 /**
   * Created by gaoxd on 2018/5/2.
   */
-object ddd {
+object testFuture {
   def main(args: Array[String]) {
 
     var errMessage = ""

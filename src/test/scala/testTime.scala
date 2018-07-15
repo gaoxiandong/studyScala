@@ -1,6 +1,10 @@
 import java.text.SimpleDateFormat
 import java.util.{Calendar, Date}
 
+//import _root_.utils.TimestampUtil._
+
+//import _root_.utils.TimestampUtil._
+
 import scala.annotation.tailrec
 
 object TimestampUtil {
@@ -154,7 +158,38 @@ object testTime {
   def main(args: Array[String]) {
     import TimestampUtil._
     val ddd= TimestampUtil.now
-    //延时的毫秒数 晚上11点执行
+    //延时的毫秒数 晚上23:59点执行
     println(ddd.endOfTheDay - now - 60000)
+    println(now.endOfTheDay - now - 60000*1*60*8 - 2523698)
+    println(now.endOfTheDay - now - 60000*1*60*16)
+
+    if((now.endOfTheDay - now - 60000*1*60*16)<0){
+      now.endOfTheDay - now + 60000*1*60*8
+    }
+
+    println(s"ddd.dayOfWeek=${ddd.dayOfWeek}")
+    val dddd = TimestampUtil.MILLS
+    println(TimestampUtil.MILLS)
+    println(TimestampUtil.MIN)
+    println(TimestampUtil.HOUR)
+    println(TimestampUtil.DAY)
+
+    println(now)
+    println(now.toDate)
+    println(nowDate)
+
+    println("time="+1531259234000L.toDate)
+    println(1528680655806L.toDate)
+    println(1528713055806L.toDate)
+
+    println("-------")
+    println(1528980553468L.toDate)
+    println(1528980553468L.millisOfDay)
+    println(1528980553468L.dayOfWeek)
+    println(1528980553468L.hourOfDay)
+    println(1528980553468L.minOfDay)
+    println("-------")
+
+    println(System.getProperty("user.dir"))
   }
 }

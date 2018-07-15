@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: com.rm.ai:detect-thrift:0.2:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.rm.ai/detect-thrift/jars/detect-thrift-0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

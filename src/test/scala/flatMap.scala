@@ -23,5 +23,6 @@ object flatMap {
   println(b)
   val c = numbers.foldRight(3)((res,n) => res + n)
   println(c)
+
 }
 }
